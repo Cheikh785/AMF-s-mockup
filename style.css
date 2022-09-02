@@ -1,9 +1,18 @@
+/* ***************************************************
+    -- Author       :   By El_cof                    *
+    -- Mail         :   cheikhououmarba@esp.sn       *
+    -- tel          :   782727191                    *
+    -- github       : https://github.com/Cheikh785   *
+   *************************************************** */
 body {
     padding: 0;
     margin: 0;
 }
 .container {
     padding-top: 3%;
+}
+.first-part .row-mnémonique {
+    width: 98%;
 }
 .smart > input {
     width: 100%;
@@ -38,7 +47,7 @@ body {
     margin-top: 8%;
 }
 .input-galaxy > input {
-    width: 100%;
+    width: 95%;
     border: 1px solid rgba(45, 45, 45, 0.498);
     border-radius: 5px;
     padding-left: 1%;
@@ -49,17 +58,15 @@ body {
     top: -19%;
 }
 .input-slvb > input {
-    width: 100%;
+    width: 95%;
     border: 1px solid rgba(45, 45, 45, 0.498);
     border-radius: 5px;
     padding-left: 1%;
     height: 4vh;
 }
+
 /* ------------------------------ second part ------------------------------ */
 
-.second-part {
-    /* background-color: red; */
-}
 .second-part .table-icon {
     margin-top: 3%;
 }
@@ -67,7 +74,7 @@ body {
     margin-top: 10%;
 }
 .second-part > .row > .col > table {
-    width: 105%;
+    width: 100%;
     margin-top: 2%;
     margin-left: -5%;
 }
