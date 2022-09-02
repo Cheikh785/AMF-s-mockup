@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    padding-top: 3%;
+}
+.top-part {
+    /* background-color: red; */
+}
+.smart > input {
+    width: 100%;
+    border: 1px solid rgba(45, 45, 45, 0.498);
+    border-radius: 5px;
+    padding-left: 4%;
+    height: 3vh;
+}
+.quatre {
+    background-color: rgba(53, 65, 56, 0.173);
+    font-size: 20px;
+    width: 55%;
+    padding: 2% 3% 2% 3%;
+    border-radius: 5px;
+}
+.disabled > input {
+    width: 18%;
+    height: 45%;
+    display: inline-block;
+    margin-top: 5%;
+}
+.disabled > p {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.row-galaxy {
+    height: 8vh;
+}
+.row-galaxy p {
+    margin-top: 8%;
+}
+.input-galaxy > input {
+    width: 100%;
+    border: 1px solid rgba(45, 45, 45, 0.498);
+    border-radius: 5px;
+    padding-left: 1%;
+    height: 6.3vh;
+}
+.input-galaxy > input::placeholder {
+    position: relative;
+    top: -19%;
+}
+.input-slvb > input {
+    width: 100%;
+    border: 1px solid rgba(45, 45, 45, 0.498);
+    border-radius: 5px;
+    padding-left: 1%;
+    height: 4vh;
+}
