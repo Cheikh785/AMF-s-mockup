@@ -58,3 +58,49 @@ body {
     padding-left: 1%;
     height: 4vh;
 }
+/* ------------------------------ Middle part ------------------------------ */
+
+.middle-part {
+    /* background-color: red; */
+}
+.middle-part .table-icon {
+    margin-top: 3%;
+}
+.middle-part .table-icon > div {
+    margin-top: 10%;
+}
+.middle-part > .row > .col > table {
+    width: 105%;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+.middle-part > .row > .col > table th {
+    color: gray;
+    font-weight:  600;
+}
+.middle-part > .row > .col > table td {
+    border-right: 1px solid rgb(174, 174, 174);
+    border-top: 1px solid gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(59, 59, 59);
+}
+.middle-part > .row > .col > table tr {
+    height: 3vh;
+}
+.middle-part > .row > .col > .separator-line {
+    border: 2px solid gray;
+    width: 80%;
+    margin-left: -5%;
+}
+.middle-part .check-default {
+    margin-left: 36%;
+}
+.middle-part .check-default input  {
+    margin-left: 5%;
+    width: 20px;
+    height: 2.2vh;
+    border-radius: 0;
+}
+.middle-part .cent-quatre-vingt {
+    float: right;
+}
