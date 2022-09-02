@@ -69,12 +69,12 @@
                         </svg>
                     </div>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
                         </svg>
                     </div>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
                         </svg>
                     </div>
@@ -186,8 +186,174 @@
         </div>
 
         <div class="third-part">
-
+            <div class="row">
+                <div class="col left-part">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="coef-logistic">Coefficient logistique</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="1,0500" name="coef-logistic" id="coef-logistic">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price-logistic">Prix logistique</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="189" name="price-logistic" id="price-logistic">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="coef-sell">Coefficient de vente</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="2,000" name="coef-sell" id="coef-sell">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price-sell">Prix de vente</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="378" name="price-sell" id="price-sell">
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <div>
+                            <input class="form-check-input check-reassortir" type="checkbox" value="">
+                            <p class="text-reassortir">Ne pas réassortir automatiquement</p>
+                        </div>
+                        <div>
+                            <input class="form-check-input check-stock" type="checkbox" value="">
+                            <p class="text-stock">Ne pas gérer en stock</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col middle-part">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="poids-net">Poids net</label>
+                            </td>
+                            <td>
+                                <input type="number" name="poids-net" id="poids-net" placeholder="270,000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="poids-brut">Poids brut</label>
+                            </td>
+                            <td>
+                                <input type="number" name="poids-brut" id="poids-brut" placeholder="320,000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Taux de TVA</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="taux-normal" id="taux-normal" class="form-select">
+                                    <option value="taux-normal">Taux Normal (20%)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="clock">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col right-part">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="dernier-control">Délai contrôle</label>
+                            </td>
+                            <td>
+                                <input type="number" name="delai-control" id="delai-control" placeholder="0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="periodicite-control">Périodicité contrôle</label>
+                            </td>
+                            <td>
+                                <select name="periodicite-control" id="periodicite-control">
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dernier-control">Dernier contrôle</label>
+                            </td>
+                            <td>
+                                <p class="calendar-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                        <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                    </svg>
+                                </p>
+                                <input type="text" name="dernier-control" id="dernier-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="prochain-control">Prochain contrôle</label>
+                            </td>
+                            <td>
+                                <input type="text" name="prochain-control" id="prochain-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nb-etiquettes">Nbre étiquettes</label>
+                            </td>
+                            <td>
+                                <input type="number" name="nb-etiquettes" id="nb-etiquettes" placeholder="1">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="details">
+                        <p>Créé par Administrateur/Administrator</p>
+                        <p>Créé le 3/11/17 à 14:42</p>
+                        <p>Dernière modification par Administrateur/Administrator</p>
+                        <p>Dernière modification le 8/7/18 à 18:25</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer>
+            <div>
+                <hr>
+            </div>
+            <div class="footer-icon">
+                <div class="blue-check">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                </div>
+                <div class="green-check">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                </div>
+                <div class="cancel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </div>
+            </div>
+        </footer>
       </div>
   </body>
 </html>
